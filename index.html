@@ -1,0 +1,302 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Navbar and Hero Section</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <style>
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+    
+        @keyframes slideInRight {
+          from {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+    
+        .animate-slideInLeft {
+          animation: slideInLeft 1.5s ease-out;
+        }
+    
+        .animate-slideInRight {
+          animation: slideInRight 1.5s ease-out;
+        }
+      </style>
+    </head>
+    <body class="bg-black text-purple-300">
+      <header class="text-purple-300 body-font bg-black">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-purple-300 mb-4 md:mb-0">
+                
+                <span class="ml-2 text-lg underline"><em>IN  </em> <em>PORTFOLIO</em></span>
+              </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center ">
+           
+            <a href="#home" class="mr-4 hover:text-white">Home</a>
+            <a href="#about" class="mr-4 hover:text-white">About</a>
+            <a href="#projects" class="mr-4 hover:text-white">Projects</a>
+            <a href="#contact" class="mr-4 hover:text-white">Contact</a>
+          </nav>
+
+        </div>
+      </header>
+    
+      <!-- Hero section -->
+      <section class="text-purple-300 body-font bg-black">
+    
+        <div class="container mx-auto flex px-3 py-16 md:flex-row flex-col items-center">
+          <div class="lg:max-w-md lg:w-full md:w-1/2 w-full mb-8 md:mb-0 animate-slideInLeft">
+            <img class="object-cover object-center rounded w-13 alt="hero" src="https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306579.jpg" />
+          </div>
+
+          <div class="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center animate-slideInRight">
+            <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-purple-300 underline">Hello , I'am Iqra </h1>
+
+             
+             <p class="mb-6 leading-relaxed text-purple-200 text-sm md:text-base"> I am a passionate web developer with a love for creating dynamic and user-friendly websites My expertise lies in HTML, CSS, JavaScript and frameworks like Nextjs and Tailwind CSS. I strive to bring innovative ideas to life while ensuring a seamless user experience</p>
+            <div class="flex justify-center">
+             
+              <!-- <button class="inline-flex text-white bg-purple-600 border-0 py-2 px-4 focus:outline-none hover:bg-purple-600 transition-transform transform hover:scale-105 rounded text-sm">About Me</button> -->
+             
+              <div class="border border-purple-500 rounded-lg p-4 shadow-lg bg-purple-600">
+                <button><a href="mailto:example@example.com" class="block text-white hover:text-white transition duration-300">Iqranaz4321@gmail.com</a></button>
+                
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Projects -->
+<section id="projects" class="text-purple-300 body-font bg-black">
+  <div class="container mx-auto py-24">
+    <h2 class="text-4xl text-center mb-12 underline decoration-purple-600">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+      
+    
+     <div class="project-card transition-transform transform hover:scale-105 p-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg animate-slideInLeft flex flex-col" style="min-height: 400px;">
+        <img class="project-image rounded-lg mb-4" src="https://images.unsplash.com/photo-1611605862651-c91b8778ce01?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXRtJTIwbWFjaGluZXxlbnwwfHwwfHx8MA%3D%3D" alt="Project 1" />
+        <h3 class="text-xl font-semibold mb-2 underline">ATM Machine</h3>
+        <p class="mb-4 flex-grow">Developed an ATM machine simulation using TypeScript featuring balance checks deposits withdrawals and transaction history</p>
+        <a href="https://github.com/IqraNaz421/ATM-Machine.git" class="text-white bg-black hover:bg-purple-600 py-2 px-4 rounded mt-auto">View Project</a>
+      </div>
+      
+     
+      <div class="project-card transition-transform transform hover:scale-105 p-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg animate-slideInRight flex flex-col" style="min-height: 400px;">
+        <img class="project-image rounded-lg mb-4" src="https://i.ytimg.com/vi/jcKe13D6bao/sddefault.jpg" alt="Project 2" />
+        <h3 class="text-xl font-semibold mb-2 underline">Number Guessing Game</h3>
+        <p class="mb-4 flex-grow">Developed a number guessing game in TypeScript where players attempt to guess a randomly generated number with feedback on each attempt</p>
+        <a href="https://github.com/IqraNaz421/cli-Number-Guessing.git" class="text-white bg-black hover:bg-purple-600 py-2 px-4 rounded mt-auto">View Project</a>
+      </div>
+
+      
+      <div class="project-card transition-transform transform hover:scale-105 p-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg animate-slideInLeft flex flex-col" style="min-height: 400px;">
+        <img class="project-image rounded-lg mb-4" src="https://play-lh.googleusercontent.com/bqYUUOm1yoHIo6ASa2GVJbSxKYRAjpMgmyagcLNSIPtvKGhRA__rD4Sh0VEnSkHyLQ=w526-h296-rw" alt="Project 3" />
+        <h3 class="text-xl font-semibold mb-2 underline">Static Resume Builder</h3>
+        <p class="mb-4 flex-grow">Created a static resume builder using TypeScript allowing users to input details and generate a professional resume in real-time</p>
+        <a href="https://first-static-resume.vercel.app/" class="text-white bg-black hover:bg-purple-600 py-2 px-4 rounded mt-auto">View Project</a>
+      </div> 
+
+     
+     <div class="project-card transition-transform transform hover:scale-105 p-4 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg animate-slideInRight flex flex-col" style="min-height: 400px;">
+        <img class="project-image rounded-lg mb-4" src="https://img.freepik.com/free-vector/colorful-todo-list-illustration_1308-172724.jpg" />
+        <h3 class="text-xl font-semibold mb-2 underline">TODO List App</h3>
+        <p class="mb-4 flex-grow">Developed a to-do list app using TypeScript enabling users to add edit delete and save tasks with a sleek user-friendly interface</p>
+        <a href="https://to-do-list-app-three-dusky.vercel.app/" class="text-white bg-black hover:bg-purple-600 py-2 px-4 rounded mt-auto">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+    <!-- about -->
+ <section id="about" class="text-purple-300 body-font bg-black">
+
+  <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
+    
+      <div class="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center bg-purple-800 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+          <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-purple-300 underline animate-fadeIn">About Me</h1>
+          <div class="flex justify-center mb-4">
+              <img src="https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306579.jpg" alt="Profile Picture" class="rounded-full w-24 h-24 border-4 border-purple-500 animate-fadeIn" />
+          </div>
+       
+          <p class="mb-8 leading-relaxed text-purple-200 text-sm md:text-base text-shadow">
+              Ia m a web developer passionate about crafting dynamic websites My toolkit includes HTML CSS JavaScript and frameworks like Next.js and Tailwind CSS I enjoy tackling challenges and am keen on learning new technologies
+              <br><br>
+              With a focus on design and user experience I ensure my projects are not only functional but also visually striking
+          </p>
+          
+          
+          <div class="mt-4 max-w-sm mx-auto">
+            <h3 class="text-lg font-semibold mb-4 text-white underline">Connect with Me</h3>
+            <div class="border border-purple-500 rounded-lg p-4 mb-4 shadow-lg bg-black">
+                <p class="text-white">Phone:</p>
+                <a href="tel:+1234567890" class="block text-purple-500 hover:text-purple-300 transition duration-300">03165437889</a>
+            </div>
+            <div class="border border-purple-500 rounded-lg p-4 shadow-lg bg-black">
+                <p class="text-white">Email:</p>
+                <a href="mailto:example@example.com" class="block text-purple-500 hover:text-purple-300 transition duration-300">Iqranaz4321@gmail.com</a>
+            </div>
+        </div>
+        
+        
+        
+      </div>
+  </div>
+</section>
+
+<style>
+  /* Add CSS for animations */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  /* Apply animation to elements */
+  .animate-fadeIn {
+      animation: fadeIn 0.8s ease forwards;
+  }
+
+  /* Text shadow for paragraph */
+  .text-shadow {
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+</style>
+ 
+    <!-- contact -->
+ <section id="contact" class="text-purple-300 body-font bg-black py-24">
+  <div class="container mx-auto flex flex-col text-center mb-16">
+      <h2 class="text-4xl font-bold underline decoration-purple-600 mb-8 animate-fadeIn">Contact Me</h2>
+      <p class="mb-4 leading-relaxed text-purple-200 text-sm md:text-base animate-fadeIn" style="animation-delay: 0.2s;">
+          I would love to hear from you! Whether you have a question feedback or just want to connect feel free to reach out
+      </p>
+  </div>
+  
+  <div class="container mx-auto flex justify-center">
+      <form class="bg-purple-800 p-8 rounded-lg shadow-lg w-full max-w-md animate-slideIn">
+          <div class="mb-4">
+              <label class="block text-purple-300 text-sm font-bold mb-2" for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" class="bg-black text-purple-300 border border-purple-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full" required />
+          </div>
+          <div class="mb-4">
+              <label class="block text-purple-300 text-sm font-bold mb-2" for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" class="bg-black text-purple-200 border border-purple-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full" required />
+          </div>
+          <div class="mb-4">
+              <label class="block text-purple-300 text-sm font-bold mb-2" for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" class="bg-black text-purple-200 border border-purple-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full" rows="5" required></textarea>
+          </div>
+          <div class="flex items-center justify-center">
+              <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">Send Message</button>
+          </div>
+      </form>
+  </div>
+ </section>
+<style>
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+   @keyframes slideIn {
+      from {
+          opacity: 0;
+          transform: translateY(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+   
+  .animate-fadeIn {
+      animation: fadeIn 0.8s ease forwards;
+  }
+
+  .animate-slideIn {
+      animation: slideIn 0.8s ease forwards;
+  }
+</style> 
+ 
+
+<footer class="bg-black text-purple-300 body-font py-8">
+  <div class="container mx-auto flex flex-col items-center">
+      <div class="flex flex-col items-center mb-6">
+          <h2 class="text-2xl font-bold underline decoration-purple-600 mb-2 text-center">Stay Connected</h2>
+          <p class="text-sm leading-relaxed text-purple-200 text-center">Subscribe to my newsletter for updates and insights</p>
+      </div>
+      
+      <div class="flex justify-center space-x-4 mb-6">
+          <a href="https://www.facebook.com/profile.php?id=100022188053240&mibextid=ZbWKwL" class="text-purple-300 hover:text-purple-500 transition">
+              <img src="https://img.icons8.com/material-outlined/24/ffffff/facebook-new.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/iqranaz2968?igsh=MWsxMmJ0ZGZ6MHZhbg==" class="text-purple-300 hover:text-purple-500 transition">
+              <img src="https://img.icons8.com/material-outlined/24/ffffff/instagram-new.png" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/iqra-naz-43899b2b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-purple-300 hover:text-purple-500 transition">
+              <img src="https://img.icons8.com/material-outlined/24/ffffff/linkedin.png" alt="LinkedIn" />
+          </a>
+      </div>
+
+      <form action="https://formspree.io/f/xqazrkjg" method="POST" class="bg-purple-800 p-4 rounded-lg w-full max-w-md mb-6">
+          <div class="flex flex-col md:flex-row md:items-center">
+              <input type="email" placeholder="Your Email" class="bg-black text-purple-200 border border-purple-600 rounded-lg py-2 px-4 flex-grow mb-2 md:mb-0 md:mr-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+              <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg py-2 px-4">Subscribe</button>
+          </div>
+      </form>
+
+      <p class="text-xs text-purple-200 text-center">
+          &copy; 2024 Iqra All rights reserved | Designed with ❤️
+      </p>
+  </div>
+</footer>
+
+    </body>
+    </html>
+     
+    
+      
+</body>
+</html>
+
+

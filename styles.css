@@ -1,0 +1,30 @@
+.project-card {
+    max-width: 300px; /* Set a max width for the project cards */
+    width: 100%; /* Make it responsive */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.project-image {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a max height for images */
+    object-fit: cover; /* Ensure images cover the container */
+}
+
+/* Optional: Adjust spacing for smaller screens */
+@media (max-width: 640px) {
+    .project-card {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; /* Adjust this based on your design */
+    object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+    object-position: center; /* Keeps the image centered */
+    border-radius: 8px; /* Optional: keeps the rounded corners consistent */
+  }
+  
+  
+   
